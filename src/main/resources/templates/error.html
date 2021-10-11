@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ошибка</title>
+    </meta>
+</head>
+<body>
+<h1>Ошибка</h1>
+<p>Что-то пошло не так</p>
+<p th:if="${url}">
+    <b>Page:</b>
+    <span th:text="${url}">URL</span>
+</p>
+
+<p th:if="${errorDescription}">
+    <b>Page:</b>
+    <span th:text="${errorDescription}">Error</span>
+</p>
+</body>
+</html>

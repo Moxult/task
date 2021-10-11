@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Авторизованная зона</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+    <h1>Страница для авторизованных пользователей</h1>
+
+    <b>Пользователь:</b>
+    <span th:text="${login}">Login</span>
+    <br>
+    <b>Email:</b>
+    <span th:text="${email}">Email</span>
+    <br>
+    <a th:href="@{/logout}"> Выход</a>
+</body>
+</html>
